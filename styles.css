@@ -1,0 +1,262 @@
+/******w*************
+    
+    Project 3 Stylesheet
+    Name: Colin Ordonez
+    Date: 4/24/2022
+    Description: Styles for Project 3
+
+********************/
+html{
+    background: url('images/water.jpg');
+    font-size: 62.5%;
+}
+
+body{
+    background: #FFF;
+    font-family: Verdana;
+    width: 85%;
+    max-width: 90rem;
+    margin: 10rem auto;
+    border-radius: 1rem;
+    border: 1.5rem solid #03045E;
+}
+
+header{
+    background: linear-gradient(#0096C7, #48CAE4);
+    height: 13rem;
+    color: #FFF;
+    font-style: italic;
+}
+    header h1{
+        margin: 0 auto;
+        padding: 1rem;
+        font-size: 5rem;
+    }
+
+    header h3
+    {
+        margin: 1 auto;
+        padding: 0 1rem;
+        font-size: 1.8rem;
+    }
+
+#mainNav{
+    background: linear-gradient(#03045E, #0077B6);
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+    #mainNav ol{
+        list-style: none;
+        margin: 0rem;
+    }
+        #mainNav li{
+            display: inline;
+            padding: 1rem;
+        }
+            #mainNav a{
+                color: #FFF;
+                text-decoration: none;
+                font-weight: bold;
+            }
+
+            #mainNav a:hover, a:focus{
+                color: #00B4D8;
+            }
+
+#footerNav{
+    margin: 1rem;
+    margin-bottom: 0.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    #footerNav ol{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+        #footerNav li{
+            display: inline;
+            height: 2vh;
+            padding: 0;
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        #footerNav li:not(:first-child):before{
+            content: " | ";
+        }
+            #footerNav a{
+                text-decoration: none;
+            }
+            #footerNav a:hover, #footerNav a:focus{
+            color: #00B4D8;
+            }
+
+main{
+    padding: 1rem;
+}
+    main h2{
+        font-size: 3rem;
+        margin: 0 auto;
+    }
+    main p{
+        font-size: 1.6rem;
+    }
+
+/* Main page*/
+#columns{
+    display: flex;
+    justify-content: space-between;
+}
+    #columns div{
+        width: 40rem;
+    }
+
+    #columnOne h3{
+       font-size: 2rem;
+       margin-top: 0;
+    }
+
+    #columnTwo img{
+        max-width: 40rem;
+    }
+
+    #columnTwo p{
+        font-size: 1.2rem;
+    }
+
+/* Our Services page*/
+#productsMain{
+
+}
+    #productsMain h2{
+        font-size: 2rem;
+    }
+        #productsMain h2 a{
+            text-decoration: none;
+        }
+
+#packages{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem auto;
+}
+    #packages div{
+        /*background: linear-gradient(#48CAE4, #CAF0F8);*/
+        border: 0.2rem solid #000;
+        border-radius: 2rem;
+        width: 25%;
+    }
+        #packages div h3{
+            text-align: center;
+            font-size: 2rem;
+            color: #CAF0F8;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        #packages div ul{
+            font-size: 1.6rem;
+            padding: auto;
+            padding-left: 2rem;
+            color: #CAF0F8;
+            text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+        }
+        #productsMain a:hover, a:focus{
+            color: #00B4D8;
+        }
+
+#basic{
+    background: url('images/can.jpg');
+    background-size: cover;
+}
+
+#premium{
+    background: url('images/tallcan1.jpg');
+    background-size: cover;
+}
+
+#nonAlcoholic{
+    background: url('images/beer1.jpg');
+    background-size: cover;
+}
+
+/* Sign up page*/
+#inputs{
+    display: flex;
+}
+    #inputs ul{
+        list-style: none;
+        flex: 1;
+        padding: 0;
+        padding-left: 10rem;
+    }
+        #inputs ul li {
+            width:65%;
+            margin: 0px auto;
+        }
+
+        #inputs li{
+            justify-content: center;
+            padding: 1rem;
+        }
+            #inputs label {
+                display: inline-block;
+                width:20rem;
+                margin-top: 2px;
+                font-size: 1.5rem;
+            }
+
+            #inputs input {
+                display: inline-block;  
+                width:50%;
+                height:26px;
+                padding-left: 5px;
+                font-size: 1.5rem;
+                color: #333;
+            }
+                #inputs input:focus{
+                    box-shadow: 0 0 0 .3rem #00B4D8;
+                    background-color: #CAF0F8;
+                }
+
+            #inputs select {
+                display: inline-block;  
+                height:30px;
+                padding-left: 5px;
+                font-size: 14px;
+                line-height: 26px;
+                padding-top: 3px;
+                color: #333;
+            }
+
+.formError {
+    color: red;
+    margin-left: 110px;
+    font-size: 1.2rem;
+}
+
+#subscriptionForm p{
+    text-align: center;
+}
+
+#submit, #clear{
+    background:linear-gradient(to bottom, #0096C7 5%, #CAF0F8 100%);
+    background-color:#7892c2;
+    border-radius:1rem;
+    display:inline-block;
+    cursor:pointer;
+    color:#fff;
+    font-size:1.8rem;
+    padding:1rem 3rem;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #283966;
+}
+#submit, #clear:hover {
+    background:linear-gradient(to bottom, #0096C7 5%, #CAF0F8 100%);
+    background-color:#476e9e;
+}
+#submit, #clear:active {
+    position:relative;
+    top:1px;
+}
+

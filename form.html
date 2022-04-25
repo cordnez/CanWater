@@ -1,0 +1,86 @@
+<!-------w-----------
+
+    Project 3
+    Name: Colin Ordonez
+    Date: 4/24/2022
+    Description: The form for subscribing to one of our services.
+
+-------------------->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Sign Up!</title>
+		<link rel="stylesheet" type="text/css" href="styles.css" />
+		<script src="js/validate.js"></script>
+	</head>
+	<body>
+		<header>
+			<h1>CanWater&trade;</h1>
+			<h3>Water in a can, because we can!</h3>
+		</header>
+		<nav id="mainNav">
+			<ol>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Our Services</a></li>
+				<li><a href="form.html">Sign Up</a></li>
+			</ol>
+		</nav>
+		<main id="formMain">
+			<h2>Fill out your information down below!</h2>
+			<form action="index.html" id="subscriptionForm">
+				<fieldset id="inputs">
+					<ul>
+						<li>
+							<label for="fullName">Full Name</label>
+							<input id="fullName" type="text" name="fullName"/>
+							<p class="formError error" id="fullName_error">*Required*</p>
+						</li>
+						<li>
+							<label for="address">Address</label>
+							<input id="address" type="text" name="address"/>
+							<p class="formError error" id="address_error">*Required*</p>
+						</li>
+						<li>
+							<label for="phoneNumber">Phone Number</label>
+							<input id="phoneNumber" name="phoneNumber" type="number" />
+							<p class="formError error" id="phoneNumber_error">*Required*</p>
+							<p class="formError error" id="phoneNumberFormat_error">*Invalid phone number*</p>
+						</li>
+						<li>
+							<label for="email">Email</label>
+							<input id="email" name="email" type="text" />
+							<p class="formError error" id="email_error">*Required*</p>
+							<p class="formError error" id="emailFormat_error">*Invalid email address*</p>
+						</li>
+						<li>
+							<label for="package">Package</label>
+							<select id="package" name="package">
+								<option>Basic</option>
+								<option>Premium</option>
+								<option>"Non-Alcoholic"</option>
+							</select>
+						</li>
+						<li>
+							<label for="comments">Comments</label>
+							<input id="comments" type="text" name="comments"/>
+						</li>
+					</ul>
+						
+				</fieldset>
+				<p class="buttons">
+					<button type="submit" id="submit">Submit</button>
+					<button type="reset" id="clear">Reset</button>
+				</p>
+				<p>We will send an email regarding payment after subscribing.</p>
+			</form>
+		</main>
+		<footer id="footerNav">
+			<ol>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Our Services</a></li>
+				<li><a href="form.html">Sign Up</a></li>
+			</ol>
+		</footer>
+	</body>
+</html>
